@@ -1,0 +1,18 @@
+.modal {
+  position: fixed;
+  z-index: 9999;
+  background-color: rgba(0, 0, 0, 0.2); /* 50% transparent */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalContent {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+}

@@ -1,4 +1,4 @@
-import styles from "./Form.module.css";
+import "./Form.css";
 
 export default function Form() {
   function handleSubmit(e) {
@@ -15,9 +15,9 @@ export default function Form() {
   }
   return (
     <>
-      <div className={styles.formContainer}>
+      <div className={"formContainer"}>
         <h1>Fill details</h1>
-        <form className={styles.form} onSubmit={handleSubmit}>
+        <form className={"form"} onSubmit={handleSubmit}>
           <label htmlFor="username">Username:</label>
           <input type="text" placeholder="Username" id="username" required />
           <label htmlFor="email">Email Address:</label>
@@ -27,7 +27,7 @@ export default function Form() {
           <label htmlFor="dob">Date of Birth:</label>
           <input type="date" placeholder="Date of Birth" id="dob" required />
           <div>
-            <button type="submit" className={styles["submit-button"]}>
+            <button type="submit" className={"submit-button"}>
               Submit
             </button>
           </div>

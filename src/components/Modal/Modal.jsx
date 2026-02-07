@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Form from "../Form/Form";
-import style from "./Modal.module.css";
+import "./Modal.css";
 
 export default function Modal() {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,11 +11,8 @@ export default function Modal() {
         Open Form
       </button>
       {isOpen && (
-        <div className={style.modal} onClick={() => setIsOpen(false)}>
-          <div
-            className={style.modalContent}
-            onClick={(e) => e.stopPropagation()}
-          >
+        <div className={"modal"} onClick={() => setIsOpen(false)}>
+          <div className={"modal-content"} onClick={(e) => e.stopPropagation()}>
             <Form />
           </div>
         </div>
